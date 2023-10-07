@@ -1,0 +1,66 @@
+@import './style.css';
+
+.signUp{
+    background-image: url("../../public/images/signUp_background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    
+    margin: 10px;
+    padding: 50px 100px 50px 100px;
+    border: solid 2px;
+    height: 90vh;
+}
+
+.signUp h1{
+    margin: 0;
+    padding: 0;
+
+    font-weight: normal;
+    text-decoration-line: underline;
+}
+
+/* 레이아웃 */
+.signUp #personal_info{
+    display: flex;
+}
+.signUp .personal_info{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.signUp .article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* personal_info 스타일 */
+#labels label::after, #labels label::before, #validitys div::after, #validitys div::before{
+    content: "";
+    display: inline-block;
+    width: 100%;
+}
+#labels label, #validitys div{
+    text-align: justify;
+    line-height: 0.4;
+
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.signUp textarea{
+    height: 100px;
+}
+
+/* article 스타일 */
+.signUp .article p{
+    font-size: 18px;
+}
+.signUp .article button{
+    background-color: var(--c-main);
+    color: var(--c-white);
+}

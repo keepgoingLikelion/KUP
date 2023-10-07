@@ -36,7 +36,7 @@ function App() {
 function Mapping(){
   var nav=useNavigate();
   useEffect(() => {
-      nav("/signIn")
+      nav("/signUp")
   }, [nav]);
   
   return null;
